@@ -1,0 +1,64 @@
+.process_link{
+    text-decoration: underline;
+}
+
+#introduction h1
+{
+    font-size: 64px;
+    line-height: 64px;
+}
+
+#introduction h2
+{
+    font-size: 32px;
+    line-height: 32px;
+}
+
+#introduction h3
+{
+    font-size: 16px;
+    line-height: 16px;
+}
+
+.expand{
+    color:#777777;
+    font-size:13px;
+}
+
+.expand:hover{
+    cursor: pointer;
+    color:#444444;
+}
+
+.personna{
+    text-align:left;
+    padding:00px;
+    font-size:15px;
+    margin: 0 40px 0 40px;
+}
+
+.personnaTitle{
+    margin:0 auto auto auto
+}
+
+.matrix
+{
+    border-collapse: collapse;
+    margin:0 auto 20px auto;
+}
+
+.matrix tr td
+{
+    padding:0px 10px 0px 10px;
+    border: 2px solid black;
+}
+
+.matrix tr:nth-child(even) 
+{
+    background-color: #f2f2f2;
+}
+
+.matrix tr:last-child td
+{
+    border-top: 5px double black;
+}

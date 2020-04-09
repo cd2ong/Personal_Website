@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Christopher's UX/UI Portfolio</title>
+        <meta name="description" content="UX/UI Portfolio">
+        <link rel="stylesheet" href="../CSS/main.css">
+        <link rel="stylesheet" href="about.css">
+        <link rel="stylesheet" href="../CSS/animate.css">
+        <link rel="stylesheet" href="../navigation/navigation_style.css">
+        
+        <script type="text/javascript" src="../JS/angular.min.js"></script>
+        <script type="text/javascript" src="main_about.js"></script>
+        <script type="text/javascript" src="../navigation/navigation.js"></script>
+        <script type="text/javascript" src="../navigation/foot.js"></script>
+    </head>
+    
+    <body>
+        <div class="site_container">
+            <div id="headerBar">
+            <navi-bar></navi-bar>
+            </div>
+            <div id="content_container">
+                
+                <div id="biography" class="content">
+                    
+                    <h1 style="position:relative;margin:24px auto 24px auto">Biography</h1>
+                    
+                    <div style="margin:0 40px 0 40px;">
+                        <div class="frame left" style="width:170px;height:256px;float:left;">       
+                            <img src="../images/about/ONG-94637.JPG" style="width:170px;">
+                        </div>
+
+                        <p style="text-align:left;">I am a recent graduate from the University of Waterloo from their Systems Design Engineering program. I am very passionate about UX/UI design, graphic design, and human computer interaction. My program focused on the iterative design process and each term had at least one course focused on user experience design. I focused my studies in my last year of university around user experience design, user interface design, and biomedical engineering. There are multiple UX/UI Projects that I worked on in university and for my capstone project I was the lead UX/UI designer for my team (<a href="../gallery/">see gallery</a>). For my capstone project I worked with a startup company based out of the Velocity Foundry called Boogaloo Bunks (<a href=http://www.boogaloobunks.com>Boogaloobunks.com<a>) to develop their first prototype for their system. While working with a team of 5 other engineering students, we completed a interdisciplinary project that won 4 major awards (2 design symposium awards, and 2 entrepreneurial awards totaling $11,000 in cash prizes). I also have work experience in full stack development working for various companies and I am a very versatile worker who is proficient in web development, programming, UX/UI design, and graphic design. </p>
+                        
+                        <div class="frame right" style="width:220px;height:220px;float:right;">       
+                            <img src="../images/about/spokenword.jpg" style="width:220px;">
+                        </div>
+                        
+                        <p style="text-align:left;">Although I am very passionate about UX/UI design and engineering, I also have many other interests. I like to remain active and my preferred sport of choice is volleyball. I like to play competatively and I am currently playing weekly in a casual volleyball night. I also enjoy outdoor activities including hiking, biking, and backpack camping. In my spare time I like to write and perform spoken word poetry and I am also an avid reader. I prefer reading non-fiction but I also enjoy a casual fiction novel ever so often. Some of my favourite authors are Kurt Vonnegut, Joseph Heller, and F. Scott Fitzgerald.</p>
+                            
+                        <div style="width:130px;height:78px;margin:0px 0px 10px 0px;">       
+                            <img src="../images/about/signature.png" style="width:130px;">
+                        </div>
+                    </div>
+                        
+                </div>
+                
+                <hr style="margin: 0 20px 0 20px;">
+                
+                <div style="height:450px;" class="content">
+                    <div id="contact">
+                    <h1 style="position:relative;margin:24px 20px 36px 40px">Contact Me</h1>
+                        
+                    
+                    <form action="//formspree.io/mail@christopherdavidong.com" method="POST" novalidate>
+                        <label><span>Name: </span></label>
+                        <input type="text" name="name" required/>
+                        <label><span>Email: </span></label>
+                        <input type="email" name="_replyto"  required/>
+                        <label><span>Message: </span></label>
+                        <textarea type="message" name="message" required></textarea>
+                        <button type="submit" value="Send">Send</button>
+                    </form>
+                    </div>
+                    
+                    <div style="border-left:1px solid grey;height:410px;float:left;margin:20px 0 20px 0;box-shadow: 1px 1px 0px rgba(0, 0, 0, 0.06);"></div>
+                    
+                    <div id="resume">
+                    <h1 style="position:relative;margin:24px 40px 36px 20px">Resume</h1>
+                        
+                        <form method="get" action='../resume/Chris Ong CV.pdf'>
+                            <button style="width:inherit; float:left;padding:0 0 0 0;margin: 10px auto 0 50px;height:60px;background:none; border:none;cursor:pointer" type="submit">
+                                <img src="../images/about/pdf_icon.png" style="width:60px; height:60px;float:left;margin-right:20px;">
+                                <p style="text-align:left; margin:16px 0 0 auto;float:left;font-size: 16px;line-height: 24px;color: #545454;font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;">Download PDF</p>
+                            </button>
+                        </form>
+                        
+                        <form method="get" action="../resume/Chris Ong CV.docx">
+                            <button style="width:auto; float:left;padding:0 0 0 0;margin: 20px auto 0 50px;height:60px;background:none; border:none;cursor:pointer" type="submit">
+                                <img src="../images/about/docx_icon.png" style="width:60px; height:60px;float:left;margin-right:20px;">
+                                <p style="text-align:left; float:left;font-size: 16px;line-height: 24px;color: #545454;font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;">Download Docx</p>
+                            </button>
+                        </form>
+                        
+                    </div>
+                    
+                    
+                </div>
+
+                
+            </div>
+            <div id="footerBar">
+            <foot></foot>
+            </div>
+        </div>
+    </body>
+</html>
+    

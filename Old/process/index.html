@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Christopher's UX/UI Portfolio</title>
+        <meta name="description" content="UX/UI Portfolio">
+        <link rel="stylesheet" href="../CSS/main.css">
+        <link rel="stylesheet" href="process.css">
+        <link rel="stylesheet" href="../CSS/animate.css">
+        <link rel="stylesheet" href="../navigation/navigation_style.css">
+        
+        <script type="text/javascript" src="../JS/angular.min.js"></script>
+        <script type="text/javascript" src="main_process.js"></script>
+        <script type="text/javascript" src="../navigation/navigation.js"></script>
+        <script type="text/javascript" src="../navigation/foot.js"></script>
+    </head>
+    <body ng-app="Main">
+        <div class="site_container">
+            <navi-bar></navi-bar>
+
+            <div id="content_container">
+                <div id="introduction" class="content">
+                    <h2 style="position:relative;margin:24px auto 15px auto">Hello my name is Chris and I'm a</h2>
+                    <h1 style="margin:8px auto 40px auto">UX &amp UI Designer</h1>
+                    <h3 style="margin:8px auto 40px auto">
+                        Tour my portfolio and scroll down to see more about the UX/UI design process for this website
+                    </h3>
+                </div>
+                
+                <div id="processOverview" class="content" style="width:800px;">
+                    <img src="../images/process/Process.png" style="width:800px;">
+                </div>
+                
+                <div ng-controller="PersonnaController as personna" id="step1" class="content">
+                    <h1 style="position:relative;margin:24px auto 8px auto">Step 1 - Determine Audience</h1>
+                    <p style="text-align:left; margin:40px 40px 16px 40px;">It is important to determine who will be viewing the content so that I can better tailor the design of the website specifically towards what they are looking for. The general demographic for my portfolio will be employers. This demographic can be split up into four main classifications for the purposes of this portfolio. The four classes of employers that my UX/UI portfolio will be targeting are UX/UI designers, graphic designers, front-end developers, and human resource workers. This portfolio will be used for a wide variety of UX/UI job applications and these are the main parties that might engage with my portfolio. It is important to design my portfolio with these four classes in mind. </p>
+                    <p style="text-align:left; margin:auto 40px 1em 40px;">Personas are fictional people created to represent the various demographics. They can be useful to help guide the planning process and help focus the design towards the best presentation for the types of people who are likely to use your design. The following are a personas to represent the 4 main classes listed above: </p>
+                    <p style="text-align:left; margin:0 40px 16px 40px;"><b>Personas</b></p>
+                    <div class="personna" style="height:auto;">
+                        <div class="frame left" style="width:127px;height:180px;float:left;">       
+                            <img src="../images/process/sam.jpg">
+                            <div class="caption">
+                                Photo credit: <a href="https://www.flickr.com/photos/lf-photodesign/2432920537/">Lutz-R. Frank</a> via <a href="http://foter.com/">Foter.com</a> / <a href="http://creativecommons.org/licenses/by-nc-nd/2.0/">CC BY-NC-ND</a>
+                            </div>
+                        </div>
+                        <p class="personnaTitle"><b>Samantha Collins - UX/UI Designer</b></p>
+                        <p>Samantha is a 28 year old woman who works at a small digital marketing company in Toronto called ABC Digital Marketing. She is a UX/UI designer and has been working for the same company for the past 5 years. She recently received a promotion and has taken on an intermediate leadership role in her division. The company has taken on a lot of new projects and is backlogged for the next year. They are looking to expand their UX/UI team to help manage the influx of projects. One of Samantha’s new responsibilities is to hire two new junior UX/UI designers. She is nervous about finding new talent and wants to make sure she finds the perfect fit for these job openings. However, she also remembers how difficult it was for her to find her first job and she is open to the idea of offering this opportunity to fresh graduates.</p>
+                        <p>Samantha attended Sheridan/York University for her Bachelors of Design and is very skilled at graphic design, generating flawless user interface designs and layouts. She has proven herself to be quite capable of developing interfaces from a user experience perspective but was not formally trained and has developed her skills on the job over the past 5 years at ABC. She doesn’t think that UX design experience is mandatory to work in these positions but she does see it as a strong asset. The company really needs these new employees to start working right away and so she wants to find candidates that can manage to pick up the job quickly. </p>
+                    </div>
+                    
+                    <div  ng-show="personna.isOpen()" class="personna" style="height:auto;">
+                        <div class="frame right" style="width:134px;height:180px;float:right;">       
+                            <img src="../images/process/peter.jpg">
+                            <div class="caption">
+                               Photo credit: <a href="https://www.flickr.com/photos/darwinbell/354119797/">Darwin Bell</a> via <a href="http://foter.com/">Foter.com</a> / <a href="http://creativecommons.org/licenses/by-nc/2.0/">CC BY-NC</a>
+                            </div>
+                        </div>
+                        <p class="personnaTitle"><b>Peter Muller - Graphic Designer</b></p>
+                        <p>Peter is a 37 year old man who is working as a Graphic Designer for a software company called Davis Group based out of Vancouver, BC. Peter has been working for Davis Group for 8 years and this is his 4th job in his field. Peter started out his career providing freelance work to build his portfolio but transitioned to full-time work for software companies 11 years ago. Whenever Davis Group is thinking about hiring new UX/UI designers, they approach Peter to review some of the applications since he has a keen eye for artistic talent. Peter has been consulted before for past applications and all the people he approved have become hard working employees for Davis Group. Peter has high standards when it comes to graphic design and very fine details are important to him. </p>
+                        <p>On his free time, Peter likes to experiment with artistic mediums. He primarily works with hand drawings, paintings, and digital art but has been exploring the use of photography and videography in his work. He keeps his portfolio up to date and has started a blog to document his artistic experimentation. </p>
+                    </div>
+                    
+                    <div ng-show="personna.isOpen()" class="personna" style="height:auto;">
+                        <div class="frame left" style="width:160px;height:180px;float:left;">       
+                            <img src="../images/process/josh.jpg">
+                            <div class="caption">
+                                Photo credit: <a href="https://www.flickr.com/photos/nithiclicks/16203831076/">Nithi clicks</a> via <a href="http://foter.com/">Foter.com</a> / <a href="http://creativecommons.org/licenses/by/2.0/">CC BY</a>
+                            </div>
+                        </div>
+                        <p class="personnaTitle"><b>Joshua Marcos - Front-End Developer</b></p>
+                        <p>Joshua is a 25 year old male who is the co-founder of Starlite, a software start-up specializing in remote lighting control systems. He is a recent graduate from the University of Toronto and founded Starlite with a few friends from University. They are using a shared working space in downtown Toronto and are working hard to make their company successful. Joshua is also the lead front-end developer and has developed their software interfaces from scratch. Recently, Starlite has launched their first product and have gotten significant funding and support from interested investors. Some feedback they have received is that their application interface is a little difficult to use on hand-held devices. Joshua and his partners have decided that a UX/UI designer would help identify problem areas and improve user interaction with their mobile website. Joshua is also the only one on the team that knows how to develop front-end material and he is looking for someone to help him manage the workload. He is using HTML5, CSS3, and Angular JS to develop his interfaces and wants to have somebody who is familiar with these tools. </p>
+                        <p>Joshua believes that a start up company needs to have employees on the cutting edge of their field and he only wants to surround himself with the best of the best. He also wants to make sure that he is compatible with the people he works with, so their personality and work style is very important to him. A resume shows people’s qualifications and work history but he prefers to meet with people in person to learn more about them in an informal setting. </p>
+                    </div>
+                    
+                    <div ng-show="personna.isOpen()" class="personna" style="height:auto;">
+                        <div class="frame right" style="width:160px;height:180px;float:right;">       
+                            <img src="../images/process/beth.png">
+                            <div class="caption">
+                                Photo credit: <a href="https://www.flickr.com/photos/moria/231425607/">moria</a> via <a href="http://foter.com/">Foter.com</a> / <a href="http://creativecommons.org/licenses/by/2.0/">CC BY</a>
+                            </div>
+                        </div>
+                        <p class="personnaTitle"><b>Beth Ridgley - Human Resources</b></p>
+                        <p>Beth is a 41 year old woman who is working in the human resources department of ASD Corp., a large international corporation. She has been working for ASD corp. for the past 19 years and is a loyal and hard working employee. She was hired with a high school diploma and was originally in charge of reviewing incoming applications. In order to move up in the company, Beth returned to college part-time and got a diploma in office administration and accounting. Presently, Beth is the head of the human resources department and manages the entire interview process. </p>
+                        <p>She is the first line of contact for new job postings and handles initial phone interviews personally. She does not have technical knowledge for the positions that she is interviewing for and she only has the information that the various departments give her for new career openings. When reviewing applications, Beth looks for buzzwords and specific skills that match the description given to her. As the head of the department, Beth is very busy managing her HR team, processing new hires, and leading HR related presentations in the office. She does not have the time to research applicants in depth and often takes first impressions to form her decisions. She also delegates work to her staff and trusts them to fill her in on potential applicants when she can not review the content herself. </p>
+                    </div>
+                    
+                    <div ng-click="personna.toggleOpen();" class="expand">{{personna.text}} Personnas ...</div>
+                </div>
+                <hr>
+                
+                <div id="step2" class="content">
+                <h1 style="position:relative;margin:24px auto 8px auto">Step 2 - Messaging (Vision)</h1>
+                    <p style="text-align:left; margin:40px 40px 16px 40px;">Creating a mission statement helps create a clear and concise message about what exactly the focus and attention of the project is going to be. It helps outline the end goal and what is considered a successful product. A good mission statement gives you a framework for evaluating opportunities and deciding if they fit the core model of your design. The mission statement for the creation of this portfolio is as follows: </p>
+                    <p style="text-align:center; margin:20px 40px 16px 40px; font-size:30px; line-height:1.2em; font-family:times">"To create a portfolio that demonstrates my UX/UI expertise in an interesting, informative, and interactive way. Providing potential employers with the highlights of my UX process and graphic design potential while presenting myself as cutting edge, professional, and creative."</p>
+                </div>
+                <hr>
+                
+                <div id="step3" class="content">
+                <h1 style="position:relative;margin:24px auto 8px auto">Step 3 - Communication Strategy</h1>
+                    <p style="text-align:left; margin:40px 40px 16px 40px;">After determining the demographic and setting a mission statement, the next step is to determine how best to communicate our message to our viewers. Various communication methods were brain stormed and analyzed using a weight decision matrix below. These options were compared against one another using 5 different factors and each factor was given a weight for it’s priority in relation to the rest. The 4 options that were evaluated were: </p>
+                    <ol style="text-align:left; margin: 0 40px 0 40px">
+                        <li>Past Work Portfolio </li>
+                        <li>Dribble Profile</li>
+                        <li>Website Portfolio (showing the production step by step) *selected option*</li>
+                        <li>Website Resume</li>
+                    </ol>
+                    <p style="text-align:left; margin:20px 40px 16px 40px;">The following table is the decision matrix showing that the website portfolio option was the preferred choice. </p>
+                    <table class="matrix">
+                        <tr>
+                            <td rowspan="3">Factors</td>
+                            <td rowspan="3">Weight</td>
+                            <td colspan="4">Options</td>
+                        </tr>
+                        <tr></tr>
+                        <tr>
+                            <td>Option 1</td>
+                            <td>Option 2</td>
+                            <td>Option 3</td>
+                            <td>Option 4</td>
+                        </tr>
+                        <tr>
+                            <td>Quantity of Work</td>
+                            <td>0.2</td>
+                            <td>2</td>
+                            <td>2</td>
+                            <td>4</td>
+                            <td>3</td>
+                        </tr>
+                        <tr>
+                            <td>Quality of Work</td>
+                            <td>0.3</td>
+                            <td>2</td>
+                            <td>2</td>
+                            <td>4</td>
+                            <td>3</td>
+                        </tr>
+                        <tr>
+                            <td>Creativity</td>
+                            <td>0.2</td>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>5</td>
+                            <td>3</td>
+                        </tr>
+                        <tr>
+                            <td>Production Time</td>
+                            <td>0.1</td>
+                            <td>5</td>
+                            <td>4</td>
+                            <td>1</td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <td>Cost</td>
+                            <td>0.2</td>
+                            <td>5</td>
+                            <td>5</td>
+                            <td>4</td>
+                            <td>4</td>
+                        </tr>
+                        <tr>
+                            <td>Total</td>
+                            <td>1.00</td>
+                            <td>2.7</td>
+                            <td>2.6</td>
+                            <td style="background:aquamarine;">3.9</td>
+                            <td>3.1</td>
+                        </tr>
+                    </table>
+                </div>
+                <hr>
+                
+                <div id="step4" class="content">
+                <h1 style="position:relative;margin:24px auto 8px auto">Step 4 - Brand Identity</h1>
+                    <p style="text-align:left; margin:40px 40px 26px 40px;"> A Brand is the known identity of a company or individual. For the purposes of this project, a brand is what guides both the subtle or overt statements that portray my identity. In my mission statement, I mention that I want to be perceived as cutting edge, professional, and creative. These messages were considered when crafting my aesthetic. Two examples of where my brand influenced my design choices can be seen in the font and the logo. </p>
+                    <div class="frame left" style="width:160px;height:160px;float:left;margin-left:60px;margin-right:60px;margin-bottom:40px;">       
+                        <img src="../images/process/font.png" style="width:160px; height:160px;">
+                    </div>
+                    <p style="text-align:left; margin:0 40px 16px 40px;"><b>Font</b></p>
+                    <p style="text-align:left; margin:0px 40px 35px 40px;"> Choosing font styles for my website is important for keeping with the overall aesthetic I wish to acheive. I have choosen to primarily use sans-serif fonts for my website since sans-serif fonts are often seen as more modern, clean, and creative. These fonts are very common amongst flat design and this will make sure that my design keeps up with modern trends.</p>
+                    <p style="text-align:left; margin:0 40px 16px 40px;"><b>Logo</b></p>
+                    <div class="frame right" style="width:160px;height:160px;float:right;margin-right:60px;">       
+                        <img src="../images/gallery/full/Logo1.jpg" style="width:160px; height:160px;">
+                    </div>
+                    <p style="text-align:left; margin:0 40px 16px 40px;"> Creating a logo that fits with my aesthtic is important to maintain consistency throughout my website. When designing my logo, multiple different sketches were created and a few were selected to be drafted in Gimp. <a href="../gallery">My gallery</a> shows some of the collection of logo prototypes that were created in Gimp. The selected logo seen above the navigation bar at the top of the page was selected as the final design because it is remincient of modern flat design while displaying a simplistic, clean, and professional image.</p>
+                </div>
+                <hr>
+                
+                <div id="step5" class="content">
+                <h1 style="position:relative;margin:24px auto 8px auto">Step 5 - Implement Design</h1>
+                    <p style="text-align:left; margin:40px 40px 16px 40px;">Implementing the design starts off the iterative design process. This step is where production of multiple levels of prototypes are created. Multiple iterations (increasing in complexity each time) are constructed with each prototypye building upon the design from the previous. In this case, 3 iterations are currently completed which include a simple wireframe, a photoshop mockup, and a detailed website prototype</p>
+                    <p style="text-align:left; margin:0 40px 16px 40px;"><b>Iteration 1) Axure Wireframe</b></p>
+                    <p style="text-align:left; margin:10px 40px 16px 40px;">The first iteration was created in Axure and was used to show the initial wireframe design for the website. The following are a few screenshots of the axure files: </p>
+                    <div class="frame left" style="width:180px;height:180px;float:left;margin-left:60px;overflow:hidden;">       
+                        <a href="../images/gallery/home__ux_ui_process_.png"><img src="../images/gallery/home__ux_ui_process_.png" style="width:180px;"></a>
+                    </div>
+                    <div class="frame left" style="width:180px;height:180px;float:left;margin-left:10px;overflow:hidden;">       
+                        <a href="../images/gallery/about_me.png"><img style="width:180px;" src="../images/gallery/about_me.png"></a>
+                    </div>
+                    
+                    <p style="text-align:left; margin:280px 40px 16px 40px;"><b>Iteration 2) Photoshop Mockups</b></p>
+                    <p style="text-align:left; margin:10px 40px 16px 40px;">The second iteration was created in photoshop and was used to show a more detailed layout for the website. New features were added such as the gallery page and the links to Facebook and Linkedin. The following are a few screenshots of the photoshop mockups: </p>
+                    <div class="frame left" style="width:180px;height:180px;float:left;margin-left:60px;overflow:hidden;">       
+                        <a href="../images/gallery/mockup-home.png"><img src="../images/gallery/mockup-home.png" style="width:180px;"></a>
+                    </div>
+                    <div class="frame left" style="width:180px;height:180px;float:left;margin-left:10px;overflow:hidden;">       
+                        <a href="../images/gallery/mockup-about.png"><img style="width:180px;" src="../images/gallery/mockup-about.png"></a>
+                    </div>
+                    
+                    <p style="text-align:left; margin:280px 40px 16px 40px;"><b>Iteration 3) Detailed Prototype</b></p>
+                    <p style="text-align:left; margin:10px 40px 16px 40px;">The third iteration is the currently implemented website. Please explore the website to review the content. This website was produced using the following tools: </p>
+                    <img src="../images/process/HTML.png" style="height:100px;margin-bottom:30px;">
+                    <img src="../images/process/CSS.png" style="height:100px;margin-left:20px;margin-bottom:30px;">
+                    <img src="../images/process/angularjs.png" style="height:100px;position:relative; top:10px;margin-left:20px;margin-bottom:30px;">
+                    <img src="../images/process/gimp.png" style="width:100px;top:0px;position:relative;;margin-left:20px;margin-bottom:30px;">
+                </div>
+                <hr>
+                
+                <div id="step6_7" class="content">
+                <h1 style="position:relative;margin:24px auto 8px auto">Step 6 &amp; 7 - Testing and Analysis</h1>
+                    <p style="text-align:left; margin:40px 40px 16px 40px;"> Testing and analysis is needed to improve the design in future iterations. Each iterative cycle includes these steps but to varying degrees. Early stage prototypes like wireframes and mockups might not need intense usability testing. These early stages often consist of a lot of quick informal testing. As the protypes become more high level and intriquite, more formal testing might need to be conducted.</p>
+                    <p style="text-align:left; margin:0 40px 16px 40px;"><b>Informal Testing</b></p>
+                    <p style="text-align:left; margin:0 40px 16px 40px;">For the first two iterations of this website (the wireframe and photoshop mockup) informal testing was conducted on the design. In the first iteration, the personas developed in step 1 were used to test the design. I went through the design as if each persona were to navigate the site, and identified problem areas or missing information that each persona would notice. In the second iteration the design became more complex and so I asked friends and family to review my photoshop mockup. Using their feedback and comments, a new design was drafted as the preliminary website.</p>
+                    <p style="text-align:left; margin:0 40px 16px 40px;"><b>Detailed Usability Testing</b></p>
+                    <p style="text-align:left; margin:0 40px 16px 40px;">The third iteration is a very detailed preliminary website and therefore informal testing and analysis is not adequate to assess this higher level prototype. Detailed usability testing will be conducted in the following weeks.The testing will occur by collecting a sample group and asking each participant to run through various scenerios. Each participant will also be allowed to tour the site uninhibited. After each participant has completed the tasks, they will be asked to fill out a SUS questionnaire (<a href="http://www.usability.gov/how-to-and-tools/methods/system-usability-scale.html">System Usability Scale</a>) and asked a series of long answer usability questions. </p>
+                </div>
+            </div>
+            <foot></foot>
+        </div>
+    </body>
+</html>
+    

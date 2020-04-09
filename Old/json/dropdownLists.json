@@ -1,0 +1,33 @@
+{
+    "process":[
+        {"name":"Introduction",
+        "URL":"../process/#introduction"},
+        {"name":"Process Overview",
+        "URL":"../process/#processOverview"},
+        {"name":"1) Determine Audience",
+        "URL":"../process/#step1"},
+        {"name":"2) Messaging (Vision)",
+        "URL":"../process/#step2"},
+        {"name":"3) Communication Strategy",
+        "URL":"../process/#step3"},
+        {"name":"4) Brand Identity",
+        "URL":"../process/#step4"},
+        {"name":"5) Implement Design",
+        "URL":"../process/#step5"},
+        {"name":"6) Testing",
+        "URL":"../process/#step6_7"},
+        {"name":"7) Analysis",
+        "URL":"../process/#step6_7"}],
+    "about":[
+        {"name":"Biography",
+        "URL":"../about_me/#biography"},
+        {"name":"Resume",
+        "URL":"../about_me/#resume"},
+        {"name":"Contact Me",
+        "URL":"../about_me/#contact"}],
+    "faq":[
+        {"name":"Why UX/UI Design?",
+        "URL":"../faq/#question1"},
+        {"name":"What is Systems Design Engineering?",
+        "URL":"../faq/#question2"}]
+}

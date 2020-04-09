@@ -1,0 +1,176 @@
+@font-face {
+    font-family: 'OstrichSans-Bold'; /*a name to be used later*/
+    src: url('../navigation/OstrichSans-Bold.otf'); /*URL to font*/
+}
+
+/* Logo Container Start*/
+#logo_container{
+    width: 800px;
+    height: 180px;
+    margin: auto;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    color: #545454;
+    background-color: #ffffff;
+    box-shadow: 8px 0px 2px rgba(0, 0, 0, 0.06);
+    background:url(../images/navigation/logoback.png) center center no-repeat;
+}
+
+#logo{
+    width:inherit;
+    height:inherit;
+    background:url(../images/navigation/Logo1.png) center center no-repeat;
+}
+/* Logo Container End*/
+
+/* Naviagation Container Start*/
+#navigation_container {
+   margin: 0 auto;
+   padding: 0 0 0 0;
+   width: 850px;
+}
+
+#navigation{
+    height: 50px;
+    width: auto;
+    white-space: nowrap;
+    margin: 0 auto;
+    text-align:center;
+    padding: 0 0 0 0 ;
+    position:relative;
+}
+
+#navigation a {
+    text-decoration: none;
+    list-style: none;
+    display: inline-block;
+    padding: 13px 3px;
+    margin: 0 0 0 0;
+    width:auto;
+}
+
+#navigation a li{
+        text-shadow: 0 2px 1px rgba(0,0,0,0.5);
+        display: block;
+        font-family: "OstrichSans-Bold";
+        letter-spacing: 2px;
+        color: #f0f0f0;
+        font-size: 26px;
+        padding: 0 8px;
+        margin: 0;
+}
+
+#test {
+  -webkit-animation-duration: 0.6s;
+}
+
+.rectangle {
+   background: #111111;
+   height: 50px;
+   position: relative;
+   -moz-box-shadow: 0px 0px 4px rgba(0,0,0,0.55);
+   box-shadow: 0px 0px 4px rgba(0,0,0,0.55);
+   z-index: 500; /* the stack order: foreground */
+   margin: 0 auto;
+   padding: 0 0 0 0;
+}
+
+.l-triangle-top {
+   border-color: transparent transparent #BBBBBB transparent;
+   border-style:solid;
+   border-width:0 0 25px 25px;
+   height:0px;
+   width:0px;
+   position: relative;
+   float: left;
+   left: -0px;
+   top:-25px;
+   z-index:500;
+}
+ 
+.r-triangle-bottom {
+   border-color:#666666 transparent transparent transparent;
+   border-style:solid;
+   border-width:25px 25px 0 0;
+   height:0px;
+   width:0px;
+   position: relative;
+   float: right;
+   right:-0px;
+   top: -0px;
+   z-index:500;
+}
+
+.dropdown_container{
+    background: none;
+    height: auto;
+    width:630px;
+    position: relative;
+    top: 0px;
+    left:0px;
+    margin: 0;
+    padding: 0 0 0 0;
+    overflow:hidden;
+}
+
+.process
+{
+    width:212.094px;
+    left:0px;
+    top:0px;
+}
+
+.about
+{
+    width:158.359px;
+    left:370.188px;
+    top:0px;
+}
+
+.faq
+{
+    width:160.531px;
+    left:532.547px;
+    top:0px;
+}
+
+.dropdown{
+    height: auto;
+    background:#666666;
+    margin: 0 0;
+    padding: 0 0 0 0 ;
+    position:relative;
+    float:left;
+    left:0px;
+    top:0px;
+    -webkit-animation-duration: 0.4s;
+}
+
+.dropdown a {
+    text-decoration: none;
+    display: block;
+    float: left;
+    padding: 6px 0px;
+    margin: 0 0 0 0;
+    width:inherit;
+    height:auto;
+    background:#666666;
+}
+
+.dropdown a li {
+    list-style: none;
+    text-shadow: 0 2px 1px rgba(0,0,0,0.5);
+    display: block;
+    font-family: "OstrichSans-Bold";
+    letter-spacing: 1px;
+    color: #f0f0f0;
+    font-size: 19px;
+    padding: 0 8px;
+    margin: 0;
+    width:inherit;
+}
+
+.dropdown a:hover {
+    background: #999999;
+}

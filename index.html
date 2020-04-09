@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Christopher's UX/UI Portfolio</title>
+        <meta name="description" content="UX/UI Portfolio">
+        <link rel="stylesheet" href="CSS/main.css">
+        <link rel="stylesheet" href="CSS/animate.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <script type="text/javascript" src="JS/angular.min.js"></script>
+        <script type="text/javascript" src="JS/angular-cookies.min.js"></script>
+        <script type="text/javascript" src="Home/portfolio.js"></script>
+        <script type="text/javascript">
+            function toggleMenu(div) {
+              var icon = document.getElementById("nav-icon3")
+              var className = document.getElementById("nav-icon3").getAttribute("class");  
+              var list = document.getElementById("nav-menu");  
+                
+              if(className=="closed") {
+                
+                icon.className = "open";
+                list.style.height="261px";
+              }
+              else{
+                icon.className = "closed";
+                list.style.height="0px";
+              }
+            }
+        </script>
+    </head>
+    <body ng-app="Main">
+        <div id="header" class="bg">
+                <div id="logo"></div>
+                <div id="label">
+                    <span id="name">Christopher Ong</span>
+                    <span id="title"><span style="color:#0099FF">UX</span><span style="color:#9900CC">/</span><span style="color:#FF3333">UI</span> Designer</span>
+                </div>
+            <div id="nav">
+                <div id="nav-icon">
+                    <div id="nav-icon3" class="closed" onclick="toggleMenu();">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+                <ul id="nav-list">
+                    <li><a href="#_home"><div>Home</div></a></li>
+                    <li><a href="#_portfolio"><div>Portfolio</div></a></li>
+                    <li><a href="#_about"><div>About Me</div></a></li>
+                    <li><a href="#_faq"><div>FAQ</a></div></li>
+                    <li><a href="#_contact"><div>Contact</a></div></li>
+                </ul>
+                <ul id="nav-menu">
+                    <li><a href="#_home" onclick="toggleMenu();"><div>Home</div></a></li>
+                    <li><a href="#_portfolio" onclick="toggleMenu();"><div>Portfolio</div></a></li>
+                    <li><a href="#_about" onclick="toggleMenu();"><div>About Me</div></a></li>
+                    <li><a href="#_faq" onclick="toggleMenu();"><div>FAQ</div></a></li>
+                    <li><a href="#_contact" onclick="toggleMenu();"><div>Contact</div></a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div id="spacer"></div>
+        <div id="content">    
+            <div name="home" id="home">
+                <div id="_home"></div>
+                <div class="introduction">
+                    <span class="introTop">Hello, my name is Christopher and I'm a</span>
+                    <span class="introMiddle">UX & UI Designer</span>
+                    <span class="introBottom">born, raised, and based in the GTA</span>
+                    <a class="button_link" href="#_portfolio"><div class="button_static"><span>SEE MY LATEST WORK</span></div></a>
+                </div>
+            </div>
+            
+            <div ng-controller="ImageController as imageCtrl" class>
+                <div name="portfolio" id="portfolio" style="">
+                    <div id="_portfolio"></div>
+                    <h1>Portfolio</h1>
+                    <div id="album" class="content">
+
+                        <a class="albumImg" ng-repeat="image in imageCtrl.content | limitTo : 12 : imageCtrl.index" href="{{image.url.full}}" target="_blank">
+                            <div style="background-image:url({{image.url.thumbnail}})">
+                                <div id="imgDesc"><span>{{image.title}}</span> <br><br> {{image.description}}</div>
+                            </div>
+                            <!--<p>{{image.title}}</p>-->
+                        </a>
+
+                    </div>
+
+                </div>
+            <div ng-controller="ImageController as imageCtrl">
+            
+            <div name="about" id="about">
+                <div id="_about"></div>
+                <p>I am a passionate UX/UI designer based out of Toronto who firmly believes that design is the difference between a    functional product and a successful product. This is why I dedicate my time to working closely with great companies, making sure we deliver an enjoyable experience to every customer at every step of interaction with their product. 
+                </p>
+                <p>I work closely with your team, your customers and your stakeholders to make sure that we deliver exactly what they need and desire, while keeping a close eye on your business goals & objectives.
+                </p>
+                
+                <p>I am also a professional public speaker
+and workshop facilitator.
+                </p>
+                
+                <p>If this sounds exciting, <a href="mailto:mail@christopherdavidong.com?Subject=Website%20Job%20Contact">get in touch</a>.
+                </p>
+            </div>
+            
+            <div id="skills">
+                <h1 class="title">Skills</h1>
+                <div class="col1">
+                    <span>UX/UI Design</span>
+                    <span>Graphic Design</span>
+                    <span>Agile Methodology</span>
+                    <span>Iterative & Rapid Development</span>
+                    <span>Web Development</span>
+                    <ul><li>HTML5, CSS, Sass, Javascript, PHP, Angular</li></ul>
+                </div>
+                <div class="col2">
+                    <span>Public Speaking & Presenting</span>
+                    <span>Mobile & Responsive Design</span>
+                    <span>Documentation Production</span>
+                    <span>User Research Methodology</span>
+                    <ul><li>Card Sorting, A/B Testing, Focus groups, Clickstream analysis, etc...</li></ul>
+                    <span>Programming</span>
+                    <ul><li>Java, C++, C#, Python, MATLAB</li></ul>
+                </div>
+            </div>
+            
+            <div name="faq" id="faq">
+                <div id="_faq"></div>
+                
+                <div class="faqimg1"></div>
+                <h1 class="faqtitle1">WHY PURSUE UX & UI DESIGN WITH AN ENGINEERING DEGREE?</h1>
+                <p class="faqparagraph">The reason that I apply to UX/UI design jobs is because the Systems Design Engineering program at the University of Waterloo focuses on much more than your typical STEM (science, technology, engineering, and mathematics) program.
+                </p>
+                <p class="faqparagraph">Systems Design focuses on a more holistic view of engineering which incorporates a user centered design process. Over my five year degree, I was given many opportunities in the work force and in class projects to develop my UX/UI skills. This exposure nurtured my passion for UX/UI development and that is why I am choosing to pursue this field of work.
+                </p>
+                
+                <h1 class="faqtitle2">WHAT IS SYSTEMS DESIGN ENGINEERING?</h1>
+                <div class="faqimg2"></div>
+                <p class="faqparagraph">Going back to my 101 class in my first term at the University of Waterloo, the instructor told us the story of "the blind men and the elephant" ( <a href="https://en.wikipedia.org/wiki/Blind_men_and_an_elephant" target="_blank">See the Wikipedia page</a> ). In the story it is explained that multiple blind men examined different parts of an elephant. Each blind man comes to a different conclusion on what the elephant based upon what they inspected. 
+                </p>
+                <p class="faqparagraph" style="margin-bottom:3em;">The instructor then proceeded to explain that Systems Design Engineering was a broad engineering discipline that took a holistic approach. Instead of examining each part separately, Systems Design looks at the big picture (the whole elephant) and how the various parts interact. This approach was ideal to learning valuable skills in full stack development and gave me the skills to communicate effectively with various demographics (everyone from engineers to programmers to graphic designers.) 
+                </p>
+            </div>
+            
+            <div name="contact" id="contact">
+                <div id="_contact"></div>
+                <h1>Contact Information</h1>
+                <h2>Interested in working with me?</h2>
+                <a href="mailto:mail@christopherdavidong.com?Subject=Website%20Job%20Contact"><div class="button"><span>GET IN TOUCH</span></div></a>
+                
+                <div class="contactinfo" style="margin-top:40em;">
+                    <div class="contactemail"></div>
+                    <span> : mail@christopherdavidong.com</span>
+                </div>
+                
+                <div class="contactinfo">
+                    <div class="contactphone"></div>
+                    <span> : (519) 496-6692</span>
+                </div>
+                
+                <div class="contactaddress">
+                    <div class="contactlocation"></div>
+                    <span> : 104 Lappin Ave, Toronto, <br> &nbsp;&nbsp; Ontario, M6H 1Y4</span>
+                </div>
+                
+                <div class="iconContainer">
+                    <a href="https://www.linkedin.com/in/Cd2ong" target="_blank"><div class="iconLinked"></div></a>
+                    <a href="https://facebook.com/cd2ong" target="_blank"><div class="iconFB"></div></a>
+                </div>
+                
+                <div class="copyright">© 2015—2017 CHRISTOPHER ONG</div>
+            </div>
+        </div>
+    </body>
+</html>
+    

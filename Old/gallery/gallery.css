@@ -1,0 +1,116 @@
+.gallery_link{
+    text-decoration: underline;
+}
+
+#imageView{
+    position:fixed;
+    width:100vw;
+    height:100vh;
+    z-index:600;
+}
+
+#dim{
+    position:fixed;
+    width:100vw;
+    height:100vh;
+    background:rgba(0,0,0,0.8);
+    z-index:601;
+}
+
+.largeFrame{
+    position:fixed;
+    width:800px;
+    height:100vh;
+    background:black;
+    margin-left:-400px;
+    top:0;
+    left:50vw;
+    z-index:605;
+}
+
+.largeFrame img{
+    margin:0 auto;
+}
+
+.pageNav{
+    height: 30px;
+    width: 270px;
+    margin: 0 auto;
+    padding: 0 0 0 0 ;
+    position:relative;
+}
+
+.pageNav a {
+    text-decoration: none;
+    list-style: none;
+    display: block;
+    float: left;
+    border:3px solid grey;
+    padding: 0px 0px;
+    margin: 0 0 0 0;
+    width:auto;
+    background:black;
+}
+
+.pageNav a li{
+        text-shadow: 0 2px 1px rgba(0,0,0,0.5);
+        display: block;
+        color: #f0f0f0;
+        font-size: 22px;
+        padding: 0 8px;
+        margin: 0;
+}
+
+.pageNav a:hover  {
+    cursor:pointer;
+}
+
+.pageNav a.disabled li{
+    color:#666666;
+}
+
+.pageNav a.disabled:hover  {
+    cursor:default;
+}
+
+#album{
+    margin:0 20px 0 20px;
+    width:760px;
+    height:900px;
+}
+
+.polaroid {
+    position: relative;
+    float:left;
+    width: auto;
+    margin:20px;
+    height:250px;
+    text-decoration: none !important;
+}
+
+.polaroid:visited {
+    text-decoration: none;
+    text-decoration: none !important;
+}
+ 
+.polaroid img {
+    background: #999999;
+    width:193px;
+    height:193px;
+    border: 10px solid #FFFFFD;
+    border-bottom: 45px solid #FFFFFD;
+    -webkit-box-shadow: 3px 3px 3px #777,2px 2px 2px 2px #555;
+    -moz-box-shadow: 3px 3px 3px #777,2px 2px 2px 2px #555;
+    box-shadow: 3px 3px 3px #777,2px 2px 2px 2px #555;
+    text-decoration: none !important;
+}
+ 
+.polaroid p {
+    position: relative;
+    text-align: center;
+    width: inherit;
+    top: -55px;
+    font: 400 18px/1;
+    color: #888;
+    text-decoration: none !important;
+}

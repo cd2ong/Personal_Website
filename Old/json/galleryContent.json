@@ -1,0 +1,173 @@
+[
+    {
+    "title": "Coconut Oil",
+    "url": {
+        "thumbnail":"../images/gallery/thumbnail/coconut_oil_thumb.png",
+        "full":"../images/gallery/full/coconut_oil.png"
+    },
+    "thumb_size":[193,193],
+    "large_size":[160,193]
+  },
+    {
+    "title": "Self Portrait - SU Style",
+    "url": {
+        "thumbnail":"../images/gallery/thumbnail/cUniverse_thumb.png",
+        "full":"../images/gallery/full/cUniverse.png"
+    },
+    "thumb_size":[193,176],
+    "large_size":[160,193]
+  },
+   {
+    "title": "Red Panda",
+    "url": {
+        "thumbnail":"../images/gallery/thumbnail/rPanda_thumb.png",
+        "full":"../images/gallery/full/rPanda.png"
+    },
+    "thumb_size":[193,176],
+    "large_size":[160,193]
+  },
+    {
+    "title": "Logo Collection",
+    "url": {
+        "thumbnail":"../images/gallery/thumbnail/collection_thumb.png",
+        "full":"../images/gallery/full/Logo Collection.png"
+    },
+    "thumb_size":[160,193],
+    "large_size":[160,193]
+  },
+  {
+    "title": "Logo - Dotted Line",
+    "url": {
+        "thumbnail":"../images/gallery/thumbnail/Logo1_thumb.jpg",
+        "full":"../images/gallery/full/Logo1.jpg"
+    },
+    "thumb_size":[193,193],
+    "large_size":[160,193]
+  },
+  {
+    "title": "Logo - Jagged Edge",
+    "url": {
+        "thumbnail":"../images/gallery/thumbnail/Logo2_thumb.jpg",
+        "full":"../images/gallery/full/Logo2.jpg"
+    },
+    "thumb_size":[193,193],
+    "large_size":[160,193]
+  },
+  {
+    "title": "Logo - Cross Pattern",
+    "url": {
+        "thumbnail":"../images/gallery/thumbnail/X_thumb.jpg",
+        "full":"../images/gallery/full/X Logo.jpg"
+    },
+    "thumb_size":[193,193],
+    "large_size":[160,193]
+  },
+  {
+    "title": "Logo - Concentric Circle",
+    "url": {
+        "thumbnail":"../images/gallery/thumbnail/concentric_thumb.jpg",
+        "full":"../images/gallery/full/concentric.jpg"
+    },
+    "thumb_size":[193,193],
+    "large_size":[160,193]
+  },
+  {
+    "title": "Logo - Rounded Edges",
+    "url": {
+        "thumbnail":"../images/gallery/thumbnail/rounded_thumb.jpg",
+        "full":"../images/gallery/full/rounded rectangle logo.jpg"
+    },
+    "thumb_size":[193,193],
+    "large_size":[160,193]
+  },
+  {
+    "title": "Logo - Leather Patch",
+    "url": {
+        "thumbnail":"../images/gallery/thumbnail/Sew_thumb.jpg",
+        "full":"../images/gallery/full/Sew Logo.jpg"
+    },
+    "thumb_size":[193,193],
+    "large_size":[160,193]
+  },
+  {
+    "title": "UX/UI Hexes",
+    "url": {
+        "thumbnail":"../images/gallery/thumbnail/UX_UI_thumb.png",
+        "full":"../images/faq/UX_UI.png"
+    },
+    "thumb_size":[193,193],
+    "large_size":[160,193]
+  },
+  {
+    "title": "Geometric Elephant",
+    "url": {
+        "thumbnail":"../images/gallery/thumbnail/Elephant_thumb.png",
+        "full":"../images/faq/Elephant.png"
+    },
+    "thumb_size":[193,129],
+    "large_size":[160,193]
+  },
+  {
+    "title": "facebook Icon",
+    "url": {
+        "thumbnail":"../images/gallery/thumbnail/facebook_thumb.png",
+        "full":"../images/navigation/facebook.png"
+    },
+    "thumb_size":[193,193],
+    "large_size":[160,193]
+  },
+  {
+    "title": "Linkedin Icon",
+    "url": {
+        "thumbnail":"../images/gallery/thumbnail/linkedin_thumb.png",
+        "full":"../images/navigation/linkedin.png"
+    },
+    "thumb_size":[193,193],
+    "large_size":[160,193]
+  },
+  {
+    "title": "PDF Download Icon",
+    "url": {
+        "thumbnail":"../images/gallery/thumbnail/pdf_thumb.png",
+        "full":"../images/about/pdf_icon.png"
+    },
+    "thumb_size":[193,193],
+    "large_size":[160,193]
+  },
+  {
+    "title": "Docx Download Icon",
+    "url": {
+        "thumbnail":"../images/gallery/thumbnail/docx_thumb.png",
+        "full":"../images/about/docx_icon.png"
+    },
+    "thumb_size":[193,193],
+    "large_size":[160,193]
+  },
+  {
+    "title": "Phone Icon",
+    "url": {
+        "thumbnail":"../images/gallery/thumbnail/phone_thumb.png",
+        "full":"../images/gallery/full/phone.png"
+    },
+    "thumb_size":[193,193],
+    "large_size":[160,193]
+  },
+  {
+    "title": "Email Icon",
+    "url": {
+        "thumbnail":"../images/gallery/thumbnail/email_thumb.png",
+        "full":"../images/gallery/full/email.png"
+    },
+    "thumb_size":[193,193],
+    "large_size":[160,193]
+  },
+  {
+    "title": "Address Icon",
+    "url": {
+        "thumbnail":"../images/gallery/thumbnail/address_thumb.png",
+        "full":"../images/gallery/full/address.png"
+    },
+    "thumb_size":[193,193],
+    "large_size":[160,193]
+  }
+]

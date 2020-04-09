@@ -1,0 +1,44 @@
+<div id="logo_container">
+            <div id="logo"></div>
+        <!-- end Logo container -->
+</div>
+
+<div id="navigation_container">
+    <!-- the left side of the fork effect -->
+    <div class="l-triangle-top"></div>
+            
+    <!-- the ribbon body -->
+    <div class="rectangle">
+        
+        <!-- Navigation buttons-->
+        <ul id="navigation">
+            <a href="../process" ng-mouseover="navi.changeDropdown(1);navi.changeOnHeader(true);" ng-mouseleave="navi.changeOnHeader(false);" ><li class="process_link">&#10029; UX/UI Process</li></a>
+            <a href="../gallery" ><li class="gallery_link">&#10029; Gallery</li></a>
+            <a href="../about_me" ng-mouseover="navi.changeDropdown(3);navi.changeOnHeader(true);" ng-mouseleave="navi.changeOnHeader(false);" ><li class="about_link">&#10029; About Me</li></a>
+            <a href="../faq" ng-mouseover="navi.changeDropdown(4);navi.changeOnHeader(true);" ng-mouseleave="navi.changeOnHeader(false);" ><li class="faq_link">&#10029; FAQ</li></a>
+        </ul>
+        <!-- End Navigation buttons-->
+        
+        <!-- Navigation Dropdown Menus-->
+        <div style="width: 565px;margin:0 0 0 122px;">
+            <div ng-mouseover="navi.changeOnMenu(true)" ng-mouseleave="navi.changeOnMenu(false)" ng-show="navi.onDropdown()" class="dropdown_container" ng-class="{process:navi.checkDropdown(1),about:navi.checkDropdown(3),faq:navi.checkDropdown(4)}">
+                <ul ng-show="navi.checkDropdown(1)" ng-class="{'animated fadeInDown':navi.checkDropdown(1)}" class="process dropdown">
+                    <a ng-click="navi.changeOnMenu(false);navi.changeOnHeader(false);" ng-repeat="menuItem in navi.processDropdown" href="{{menuItem.URL}}"><li>{{menuItem.name}}</li></a>
+                </ul>
+                <ul ng-click="navi.changeOnMenu(false);navi.changeOnHeader(false);" ng-show="navi.checkDropdown(3)" ng-class="{'animated fadeInDown':navi.checkDropdown(3)}"  class="about dropdown">
+                    <a ng-repeat="menuItem in navi.aboutDropdown" href="{{menuItem.URL}}"><li>{{menuItem.name}}</li></a>
+                </ul>
+                <ul ng-click="navi.changeOnMenu(false);navi.changeOnHeader(false);" ng-show="navi.checkDropdown(4)" ng-class="{'animated fadeInDown':navi.checkDropdown(4)}" class="faq dropdown">
+                    <a ng-repeat="menuItem in navi.faqDropdown" href="{{menuItem.URL}}"><li>{{menuItem.name}}</li></a>
+                </ul>
+            </div>
+        </div>
+        <!-- End Navigation Dropdown Menus-->
+        
+    </div>
+    <!-- end ribbon body -->
+
+    <!-- the right side of the fork effect -->
+    <div class="r-triangle-bottom"></div>
+<!-- end navigation container -->
+</div>

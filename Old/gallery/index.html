@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Christopher's UX/UI Portfolio</title>
+        <meta name="description" content="UX/UI Portfolio">
+        <link rel="stylesheet" href="../CSS/main.css">
+        <link rel="stylesheet" href="gallery.css">
+        <link rel="stylesheet" href="../CSS/animate.css">
+        <link rel="stylesheet" href="../navigation/navigation_style.css">
+        
+        <script type="text/javascript" src="../JS/angular.min.js"></script>
+        <script type="text/javascript" src="../JS/angular-cookies.min.js"></script>
+        <script type="text/javascript" src="main_gallery.js"></script>
+        <script type="text/javascript" src="../navigation/navigation.js"></script>
+        <script type="text/javascript" src="../navigation/foot.js"></script>
+    </head>
+    <body ng-app="Main">
+        <div ng-controller="ImageController as imageCtrl">
+        <div class="site_container">
+            <navi-bar></navi-bar>
+            
+            <div id="content_container">
+                <div id="topNav" class="content">
+                    <h3 ng-click="">Page {{imageCtrl.page}}</h3>
+                        <ul class="pageNav">
+                            <a ng-click="imageCtrl.goto(1);" ng-class="{disabled:imageCtrl.disabledBack()};"><li>&lt;&lt;</li></a>
+                            <a ng-click="imageCtrl.goto(imageCtrl.page - 1);" ng-class="{disabled:imageCtrl.disabledBack()};"><li>&lt;</li></a>
+                            <a ng-click="imageCtrl.goto(1);"><li>1</li></a>
+                            <a ng-click="imageCtrl.goto(2);"><li>2</li></a>
+                            <a ng-click="imageCtrl.goto(3);"><li>3</li></a>
+                            <a ng-click="imageCtrl.goto(imageCtrl.page + 1);" ng-class="{disabled:imageCtrl.disabledForward()};"><li>&gt;</li></a>
+                            <a ng-click="imageCtrl.goto(imageCtrl.numOfPages);" ng-class="{disabled:imageCtrl.disabledForward()};"><li>&gt;&gt;</li></a>
+                        </ul>
+                </div>
+                <div id="album" class="content">
+                    
+                    <a class="polaroid" ng-repeat="image in imageCtrl.content | limitTo : 9 : imageCtrl.index" href="{{image.url.full}}">
+                        <img ng-src="{{image.url.thumbnail}}">
+                        <p>{{image.title}}</p>
+                    </a>
+                    
+                </div>
+                <div id="bottomNav" class="content">
+                    <ul class="pageNav">
+                            <a ng-click="imageCtrl.goto(1);" ng-class="{disabled:imageCtrl.disabledBack()};"><li>&lt;&lt;</li></a>
+                            <a ng-click="imageCtrl.goto(imageCtrl.page - 1);" ng-class="{disabled:imageCtrl.disabledBack()};"><li>&lt;</li></a>
+                            <a ng-click="imageCtrl.goto(1);"><li>1</li></a>
+                            <a ng-click="imageCtrl.goto(2);"><li>2</li></a>
+                            <a ng-click="imageCtrl.goto(3);"><li>3</li></a>
+                            <a ng-click="imageCtrl.goto(imageCtrl.page + 1);" ng-class="{disabled:imageCtrl.disabledForward()};"><li>&gt;</li></a>
+                            <a ng-click="imageCtrl.goto(imageCtrl.numOfPages);" ng-class="{disabled:imageCtrl.disabledForward()};"><li>&gt;&gt;</li></a>
+                        </ul>
+                    <h3>Page {{imageCtrl.page}}</h3>
+                </div>
+            </div>
+            <foot></foot>
+        </div>
+        
+        </div>
+    </body>
+</html>
+    
