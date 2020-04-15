@@ -23,7 +23,6 @@ const SKILLS: Skills[] = [
   { name: 'UX/UI Design' },
   { name: 'Graphic Design' },
   { name: 'Programming' , subset: ['Java, C++, Python, MATLAB'] },
-  { name: 'Public Speaking & Presenting' },
-  { name: 'User Research Methodology', subset: ['Card Sorting, A/B Testing, Focus groups, Clickstream analysis, etc...'] },
+  { name: 'User Research Methodology', subset: ['Card Sorting, A/B Testing, Focus groups, Clickstream analysis, and more...'] },
 
 ];

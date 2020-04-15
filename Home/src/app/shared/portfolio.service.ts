@@ -25,15 +25,15 @@ const PORTFOLIO: GalleryItem[] = [
     description: 'Premium Custom school website for College Park, Georgia.',
     thumbnail: 'url("assets/images/Portfolio/CollegePark.png")',
     details: {
-      image: 'url("assets/images/Portfolio/CollegePark.png")',
+      image: 'url("assets/images/Portfolio/CollegeParkFull.png")',
       client: 'West Corporation',
       description: `I developed this premium custom website template using the SchoolMessenger CMS.
-      This premium custom site was developed for College Park, Georgia and can be viewed here:
+      This premium custom site was developed for College Park, Georgia. You can view the site here:
       <a href="https://www.collegeparkga.com/" target="_blank">College Park Website</a>.`,
       startDate: new Date('2018-12-01'),
       endDate: new Date('2018-12-20'),
       technologies: 'HTML5, CSS3, Javascript, jQuery, SchoolMessenger CMS',
-      notes: ['Developed the template only. Design was created by a co-worker']
+      notes: ['Developed the template only, Design created by a co-worker']
     }
   },
   {
@@ -42,7 +42,7 @@ const PORTFOLIO: GalleryItem[] = [
     description: 'Premium Custom school website for district and schools.',
     thumbnail: 'url("assets/images/Portfolio/Immaculata.png")',
     details: {
-      image: 'url("assets/images/Portfolio/Immaculata.png")',
+      image: 'url("assets/images/Portfolio/ImmaculataFull.png")',
       client: 'West Corporation',
       description: `I developed this premium custom website template using the SchoolMessenger CMS.
       This premium custom site was developed for Immaculata High School in New Jersey.
@@ -51,7 +51,7 @@ const PORTFOLIO: GalleryItem[] = [
       startDate: new Date('2018-11-01'),
       endDate: new Date('2018-11-30'),
       technologies: 'HTML5, CSS3, Javascript, jQuery, SchoolMessenger CMS',
-      notes: ['Developed the template only. Design was created by a co-worker']
+      notes: ['Developed the template only, Design created by a co-worker']
     }
   },
   {
@@ -69,7 +69,7 @@ const PORTFOLIO: GalleryItem[] = [
       startDate: new Date('2018-10-15'),
       endDate: new Date('2018-10-31'),
       technologies: 'HTML5, CSS3, Javascript, jQuery, SchoolMessenger CMS',
-      notes: ['Developed the template only. Design was created by a co-worker']
+      notes: ['Developed the template only, Design created by a co-worker']
     }
   },
   {
@@ -87,7 +87,7 @@ const PORTFOLIO: GalleryItem[] = [
       startDate: new Date('2018-10-15'),
       endDate: new Date('2018-10-31'),
       technologies: 'HTML5, CSS3, Javascript, jQuery, SchoolMessenger CMS',
-      notes: ['Developed the template only. Design was created by a co-worker',
+      notes: ['Developed the template only, Design created by a co-worker',
       'The current template on thier site has been modified by the client and is no longer fully representative of what I provided.']
     }
   },
@@ -107,7 +107,7 @@ const PORTFOLIO: GalleryItem[] = [
       endDate: new Date('2018-10-03'),
       technologies: 'HTML5, CSS3, Javascript, jQuery, SchoolMessenger CMS',
       notes: ['Designed the UI and developed the front-end',
-      'The current template on thier site has been modified by west corportation and the header is different than my original design.']
+      'Current template has been modified by West Corportation and header is different than my original design']
     }
   },
   {
@@ -121,7 +121,7 @@ const PORTFOLIO: GalleryItem[] = [
       description: `I designed and developed this premium custom website template using the SchoolMessenger CMS.
       This premium custom site was developed for Dr. Gregory Jann DDS.
       This template contained a custom homepage and subpage designs.
-      The website is no longer hosted on SchoolMessengers servers so there is no link to the current implementation`,
+      The website is no longer hosted on SchoolMessenger's servers so there is no link to the current implementation.`,
       startDate: new Date('2018-10-03'),
       endDate: new Date('2018-10-06'),
       technologies: 'HTML5, CSS3, Javascript, jQuery, SchoolMessenger CMS',
@@ -157,7 +157,7 @@ const PORTFOLIO: GalleryItem[] = [
       description: `I designed and developed this premium custom website template using the SchoolMessenger CMS.
       This premium custom site was developed for MTS Orthodontics.
       This template contained a custom homepage and subpage designs.
-      The website is no longer hosted on SchoolMessengers servers so there is no link to the current implementation`,
+      The website is no longer hosted on SchoolMessenger's servers so there is no link to the current implementation.`,
       startDate: new Date('2018-10-09'),
       endDate: new Date('2018-10-12'),
       technologies: 'HTML5, CSS3, Javascript, jQuery, SchoolMessenger CMS',
@@ -175,7 +175,7 @@ const PORTFOLIO: GalleryItem[] = [
       description: `This was a quick mockup I created for a job interview for Pixelcarve.
       This was some of my early work so the design is very simple and not representative of my current style.
       I have included this to show my experience with Axure and rapid prototyping with the software.
-      Please see the following link for an example of the basic prototype.
+      Please see the following link for an example of the basic prototype:
       <a href="http://jsiy6x.axshare.com/#g=1&amp;p=home_page" target="_blank">Muskoka Tourism Prototype</a>.`,
       startDate: new Date('2016-09-12'),
       endDate: new Date('2016-09-13'),
@@ -184,16 +184,16 @@ const PORTFOLIO: GalleryItem[] = [
   },
   {
     id: 10,
-    title: 'LEAP CHILE - Wireframes',
+    title: 'LEAP Chile - Wireframes',
     description: 'Some of the wireframes from the Chilean Scotiabank website.',
     thumbnail: 'url("assets/images/Portfolio/Scotiabank.png")',
     details: {
-      image: 'url("assets/images/Portfolio/Scotiabank.png',
+      image: 'url("assets/images/Portfolio/Scotiabank.png")',
       client: 'Scotia Bank International',
-      description: `This is the first mockup and interactive prototype I created for my first full-time job with Scotiabank.
+      description: `This is the first mockup and interactive prototype I created for Scotiabank's Chilean branch.
       It includes a number of different process flows outlined by the business analysts on the agile team.
-      Please view these Axure prototypes here
-      <a href="http://c2yg72.axshare.com/#g=1&amp;p=main_menu" target="_blank">Scotiabank Prototypes</a>.`,
+      Please see the following link for an example of the basic prototype:
+      <a href="http://c2yg72.axshare.com/#g=1&amp;p=main_menu" target="_blank">LEAP Chile Wireframes/Mockups</a>.`,
       startDate: new Date('2019-02-01'),
       endDate: new Date('2016-09-01'),
       technologies: 'Axure'
@@ -207,8 +207,8 @@ const PORTFOLIO: GalleryItem[] = [
     details: {
       image: 'url("assets/images/Portfolio/Old.png")',
       description: `This is the first iteration of my website I made fresh out of university in 2015.
-      For a complete tour of the design process and website please see the attached website here:
-      <a href="http://www.christopherdavidong.com/Old/process" target="_blank">Old Website (Version 1)</a>.`,
+      For a complete tour of the design process
+      <a href="http://www.christopherdavidong.com/Old/process" target="_blank">please view the website here</a>..`,
       startDate: new Date('2015-07-01'),
       endDate: new Date('2015-07-06'),
       technologies: 'HTML5, CSS3, Javascript, jQuery, Angular 1',
@@ -237,14 +237,15 @@ const PORTFOLIO: GalleryItem[] = [
   {
     id: 13,
     title: 'CAA Travel Search/Booking Widget',
-    description: 'A custom web application built using Inspiretec\'s Harmony product]',
+    description: 'A custom web application built using Inspiretec\'s Harmony product',
     thumbnail: 'url("assets/images/Portfolio/caa.png")',
     details: {
       image: 'url("assets/images/Portfolio/caa.png")',
+      client: 'Inspiretec Ltd.',
       description: `Maintained, supported, and developed new features for the CAA travel search/booking widget.
-      The web application was builted on Inspiretec's Harmony application.
+      The web application was built on Inspiretec's Harmony application.
       The front-end stack was a mixture of HTML, CSS, Javascript, jQuery, React, Jade, and Ractive.
-      The Back-end stack was developed with Java and used a custom framework, Knotty.
+      The back-end stack was developed with Java and Knotty, a custom framework.
       Please see <a href="https://www.caasco.com/travel" target="_blank">CAASCO Travel site</a> to see the application in use.`,
       startDate: new Date('2019-02-12'),
       endDate: new Date('2020-02-12'),

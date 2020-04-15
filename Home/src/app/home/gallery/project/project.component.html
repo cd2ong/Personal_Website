@@ -6,7 +6,7 @@
     <div class="projectInfo">
       <h1>{{project.title}}
         <span *ngIf="!!project.details.client" class="client">
-          project for {{project.details.client}}
+          Project for {{project.details.client}}
         </span>
         <span *ngIf="!!project.details.startDate && !!project.details.endDate" class="duration">
           {{project.details.startDate | date:'shortDate' }} - {{project.details.endDate | date:'shortDate' }}
