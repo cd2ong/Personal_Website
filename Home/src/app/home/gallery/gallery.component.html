@@ -1,0 +1,9 @@
+<div class="gallery">
+  <div class="img" *ngFor="let project of portfolio" [style.background-image]='project.thumbnail'>
+    <div [routerLink]="['/project', project.id]" class="imgDesc">
+      <span>{{project.title}}</span>
+      <br><br>
+      {{project.description}}
+    </div>
+  </div>
+</div>

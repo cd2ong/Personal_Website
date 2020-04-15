@@ -1,0 +1,33 @@
+<div class="content">
+  <div class="projectNav">
+    <div [routerLink]="['/']" fragment="portfolio" class="button">&larr; Back</div>
+  </div>
+  <div class="project">
+    <div class="projectInfo">
+      <h1>{{project.title}}
+        <span *ngIf="!!project.details.client" class="client">
+          project for {{project.details.client}}
+        </span>
+        <span *ngIf="!!project.details.startDate && !!project.details.endDate" class="duration">
+          {{project.details.startDate | date:'shortDate' }} - {{project.details.endDate | date:'shortDate' }}
+        </span>
+      </h1>
+      <div [innerHTML]="project.details.description" class="description">
+      </div>
+      <div *ngIf="!!project.details.technologies" class="technologies">
+        Technologies Used:
+        <ul>
+          <li><span>{{project.details.technologies}}</span></li>
+        </ul>
+      </div>
+      <div *ngIf="!!project.details.notes" class="notes">
+        Additional Notes:
+        <ul>
+          <li *ngFor="let note of project.details?.notes">{{note}}</li>
+        </ul>
+      </div>
+    </div>
+    <div class="projectImg" [style.background-image]='project.details.image'></div>
+  </div>
+</div>
+

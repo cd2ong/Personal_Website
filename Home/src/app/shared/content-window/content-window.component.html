@@ -1,0 +1,8 @@
+<div [ngStyle]="{
+  'background-image': params?.bgImg, 'background-color': params?.bgColor,
+  'background-size': params?.bgSize, 'background-position': params?.bgPosition,
+  'padding-top': params?.paddingTop, 'padding-bottom': params?.paddingBottom}" class="parallax-bg" id="{{sectionId}}_section">
+  <div id="{{sectionId}}" class="sectionTag"></div>
+  <h1 *ngIf="!!sectionTitle" [class.center]="center">{{sectionTitle}}</h1>
+  <ng-content></ng-content>
+</div>

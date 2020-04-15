@@ -1,0 +1,537 @@
+@font-face {
+  font-family: NeueFont;
+  src: url("~/assets/Fonts/HelveticaNeue.ttf");
+}
+
+@font-face {
+  font-family: NeueFontBold;
+  src: url("~/assets/Fonts/helvetica-neue-bold.ttf");
+}
+
+@font-face {
+  font-family: NeueFontMedium;
+  src: url("~/assets/Fonts/HelveticaNeue Medium.ttf");
+}
+
+@font-face {
+  font-family: NeueFontLight;
+  src: url("~/assets/Fonts/HelveticaNeue-Light.otf");
+}
+
+@font-face {
+  font-family: NeueFontThin;
+  src: url("~/assets/Fonts/HelveticaNeue-Thin.otf");
+}
+
+html{
+  font-size:16px;
+  font-family: NeueFont;
+}
+
+body {
+  font-size: 0.0625em;
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height:100%;
+  width:100%;
+  color: #2E3A38;
+  font-family: NeueFont;
+}
+
+.content{
+  position:absolute;
+  top:80px;
+  z-index: 0;
+  width:100%;
+
+  @media screen and (max-width: 950px) {
+    top:220px;
+  }
+
+  @media screen and (max-width: 600px) {
+    top:80px;
+  }
+}
+
+.button_static {
+  display:block;
+  border-radius: 10px;
+  color: white;
+  line-height:2.8em;
+  font-size:18em;
+  width:15em;
+  text-align: center;
+  margin: 0 auto;
+  margin-top:3em;
+  cursor: pointer;
+  border-width: 4px;
+  border-style: solid;
+  border-color: #0099FF;
+  background: #0099FF;
+  transition: all 0.3s ease 0s;
+
+  &:hover {
+    color:white;
+  }
+}
+
+.button {
+  display:block;
+  border-radius: 10px;
+  background: none;
+  color: #0099FF;
+  line-height:2.8em;
+  font-size:18em;
+  width:10em;
+  text-align: center;
+  margin: 0 auto;
+  margin-top:2em;
+  cursor: pointer;
+  border-style: solid;
+  border-width: 4px;
+  border-color: #0099FF;
+  transition: all 0.3s ease 0s;
+
+  &:hover {
+    border-style: solid;
+    border-color: #0099FF;
+    background: #0099FF;
+    color:white;
+  }
+
+}
+
+.button_link{
+  text-decoration: none;
+
+  &:hover{
+    text-decoration: none;
+  }
+}
+
+#home_section{
+
+  .introduction{
+    padding-top:80em;
+    padding-bottom:80em;
+
+    .introTop{
+      display:table;
+      margin: 0 auto;
+      color:#FFFFFF;
+      font-size: 40em;
+      font-family: NeueFontThin;
+      text-align: center;
+    }
+
+    .introMiddle{
+      display:table;
+      margin: 0 auto;
+      color:#FFFFFF;
+      font-size: 65em;
+      font-family: NeueFont;
+      line-height: 1.8em;
+      text-align: center;
+    }
+
+    .introBottom{
+      display:table;
+      margin: 0 auto;
+      color:#FFFFFF;
+      font-size: 30em;
+      font-family: NeueFontThin;
+      text-align: center;
+    }
+  }
+
+  @media only screen and (max-device-width: 1024px) {
+    background-attachment: scroll;
+  }
+
+  @media screen and (max-width: 600px) {
+    .introduction{
+      padding-top:40em;
+      padding-bottom:40em;
+
+      .introTop{
+        margin-bottom: 0.5em;
+        font-size: 30em;
+      }
+      .introMiddle{
+        line-height:1em;
+      }
+      .introBottom{
+        margin-top: 1em;
+        font-size: 20em;
+      }
+    }
+
+  }
+}
+
+#about_section{
+  p{
+    font-family: NeueFontThin;
+    font-size:23em;
+    text-align:right;
+    margin-right:0;
+    margin-left:auto;
+    width:620px;
+    color:white;
+  }
+
+  a{
+    font-family: NeueFontThin;
+    color:#0099FF;
+    text-decoration: none;
+
+    &:hover{
+      font-family: NeueFontThin;
+      color:#0000FF;
+      text-decoration: none;
+    }
+  }
+
+  @media only screen and (max-device-width: 1024px) {
+    background-attachment: scroll;
+  }
+
+  @media screen and (max-width: 950px) {
+    background-image: url(assets/images/ONG_padding_2.png) !important;
+  }
+
+  @media screen and (max-width: 880px) {
+    background-image: none !important;
+
+    p {
+      text-align: center;
+      width:100%;
+      margin-right:auto;
+    }
+  }
+
+}
+
+#skills_section{
+  float:left;
+  display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;      /* TWEENER - IE 10 */
+  display: -webkit-flex;     /* NEW - Chrome */
+  display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
+
+  h1{
+    font-size:26em;
+    font-family: NeueFontBold;
+    margin-right: 2em;
+    float:left;
+    line-height:1.8em;
+  }
+
+  .col-list{
+    float:left;
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+    column-gap: 60em;
+
+    li {
+      font-size:26em;
+      line-height:1.8em;
+
+      ul{
+        font-size:0.7em;
+        line-height:1em;
+
+        li{
+          line-height:1.5em;
+          font-size: inherit;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 1200px) {
+    display:block;
+
+    h1{
+        width: 100%;
+        text-align: center;
+        margin-right:0;
+    }
+
+    .col-list{
+      text-align:center;
+
+      ul{
+        list-style: none;
+        margin: 0;
+        padding-left: 10%;
+        padding-right: 10%;
+        text-align: center;
+        list-style-type: none;
+        font-family: NeueFontThin;
+        font-size: 0.65em;
+      }
+    }
+
+  }
+
+  @media screen and (max-width: 880px) {
+    .col-list{
+      -webkit-column-count: 1;
+      -moz-column-count: 1;
+      column-count: 1;
+    }
+  }
+
+}
+
+#faq_section{
+  float:left;
+  color:white;
+
+  .faqimg1{
+    background-image: url("assets/images/UX_UI_bluereddull.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 50%;
+    height:300px;
+    margin: 0 0 0 0;
+    float:left;
+    margin-top: 40em;
+  }
+
+  .faqimg2{
+    background-image: url("assets/images/Elephant.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 50%;
+    height:300px;
+    margin: 0 0 0 0;
+    float:left;
+    margin-top: 30em;
+  }
+
+  .faqtitle1{
+    height:auto;
+    text-align: center;
+    width:50%;
+    font-size:35em;
+    margin-top:3em;
+    float:left;
+    font-family: NeueFontBold;
+  }
+
+  .faqtitle2{
+    height:auto;
+    text-align: center;
+    width:50%;
+    font-size:35em;
+    margin-top:4.5em;
+    float:left;
+    font-family: NeueFontBold;
+  }
+
+  a{
+    font-family: NeueFont;
+    color:#0099FF;
+    text-decoration: none;
+
+    &:hover{
+      font-family: NeueFont;
+      color:#0000FF;
+      text-decoration: none;
+    }
+  }
+
+  .faqparagraph{
+    width:100%;
+    height:auto;
+    float:left;
+    font-size:23em;
+    font-family: NeueFontThin;
+    margin-bottom:0;
+  }
+
+  @media screen and (max-width: 750px) {
+
+    .faqimg1,.faqimg2{
+        display:none;
+    }
+
+    .faqtitle1{
+        width:100%;
+    }
+
+    .faqtitle2{
+        width:100%;
+        margin-top:2em;
+    }
+
+    .faqparagraph{
+        text-align:center;
+    }
+  }
+
+  @media screen and (max-width: 400px) {
+    .faqtitle1 {
+      margin-top:2em;
+    }
+
+    .faqtitle1,.faqtitle2 {
+      font-size: 25em;
+    }
+  }
+}
+
+#contact_section{
+  float:left;
+
+  h1{
+    font-size:30em;
+    width:100%;
+    text-align: center;
+    margin: 0 0 0 0;
+    font-family: NeueFontLight;
+  }
+
+  h2{
+    font-size:22em;
+    width:100%;
+    text-align: center;
+    margin: 0 0 0 0;
+    font-family: NeueFontLight;
+  }
+
+  a{
+    text-decoration: none;
+  }
+
+  .contactphone{
+    background-image: url("assets/images/phoneicon.png");
+    background-size:contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width:30px;
+    height:40px;
+    margin: 0 10em 0 0 ;
+    float:left;
+  }
+
+  .contactemail{
+    background-image: url("assets/images/mailicon.png");
+    background-size:contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width:30px;
+    height:40px;
+    margin: 0 10em 0 0 ;
+    float:left;
+  }
+
+  .contactlocation{
+    background-image: url("assets/images/locationicon.png");
+    background-size:contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width:30px;
+    height:40px;
+    margin: 0 10em 0 0 ;
+    float:left;
+  }
+
+  .contactinfo{
+    width: auto;
+    margin: 0 auto;
+    height: 40em;
+    width: 260em;
+
+    span{
+      width:auto;
+      font-size: 20em;
+      line-height:2em;
+      text-align: left;
+      margin: 0 0 0 0;
+      margin-top: 0;
+      float:left;
+      font-family: NeueFontLight;
+    }
+  }
+
+  .contactaddress{
+    width: auto;
+    margin: 0 auto;
+    height: 80em;
+    width: 321em;
+
+    span{
+      width:auto;
+      font-size: 20em;
+      line-height:2em;
+      text-align: left;
+      margin: 0 0 0 0;
+      margin-top: 0;
+      float:left;
+      font-family: NeueFontLight;
+    }
+  }
+
+  .iconContainer{
+    width: 180px;
+    height: 50px;
+    margin: 22em auto;
+  }
+
+  .icon{
+    float: left;
+    width:auto;
+    margin: 0 5px;
+  }
+
+  .iconFB{
+    background-image: url("assets/images/facebook.png");
+    background-size:contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width:50px;
+    height:50px;
+    margin: 0px;
+  }
+
+  .iconLinked{
+    background-image: url("assets/images/linkedin.png");
+    background-size:contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width:50px;
+    height:50px;
+    margin: 0px;
+  }
+
+  .iconGit{
+    background-image: url("assets/images/git.png");
+    background-size:contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width:50px;
+    height:50px;
+    margin: 0px;
+  }
+
+  .copyright{
+    font-size:12em;
+    font-family:NeueFont;
+    color: #999999;
+    margin-top:2em;
+    margin-bottom:2em;
+    text-align: center;
+  }
+}
+
+

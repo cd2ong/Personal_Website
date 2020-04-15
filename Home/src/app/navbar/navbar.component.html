@@ -1,0 +1,40 @@
+<div id="header" class="bg">
+  <div id="logo" [routerLink]="['/']"></div>
+  <div id="label" [routerLink]="['/']">
+      <span id="name">Christopher Ong</span>
+      <span id="title">
+        <span class='primary' style="color:#0099FF">Full</span>
+        <span class='tertiary' style="color:#9900CC">-</span>
+        <span class='secondary' style="color:#FF3333">Stack</span>
+        Developer &
+        <span class='primary' style="color:#0099FF">UX</span>
+        <span class='tertiary' style="color:#9900CC">/</span>
+        <span class='secondary' style="color:#FF3333">UI</span>
+         Designer
+      </span>
+  </div>
+  <div id="nav">
+    <div id="nav-icon">
+        <div class="nav-icon" [ngClass]="{closed: !menuOpen, open: menuOpen}" (click)="toggleMenu();">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+    <ul id="nav-list">
+        <li><a [routerLink]="['/']" fragment="home"><div>Home</div></a></li>
+        <li><a [routerLink]="['/']" fragment="portfolio"><div>Portfolio</div></a></li>
+        <li><a [routerLink]="['/']" fragment="about"><div>About Me</div></a></li>
+        <li><a [routerLink]="['/']" fragment="faq"><div>FAQ</div></a></li>
+        <li><a [routerLink]="['/']" fragment="contact"><div>Contact</div></a></li>
+    </ul>
+    <ul id="nav-menu" [ngClass]="{closed: !menuOpen, open: menuOpen}">
+        <li><a [routerLink]="['/']" fragment="home" (click)="toggleMenu();"><div>Home</div></a></li>
+        <li><a [routerLink]="['/']" fragment="portfolio" (click)="toggleMenu();"><div>Portfolio</div></a></li>
+        <li><a [routerLink]="['/']" fragment="about" (click)="toggleMenu();"><div>About Me</div></a></li>
+        <li><a [routerLink]="['/']" fragment="faq" (click)="toggleMenu();"><div>FAQ</div></a></li>
+        <li><a [routerLink]="['/']" fragment="contact" (click)="toggleMenu();"><div>Contact</div></a></li>
+    </ul>
+  </div>
+</div>

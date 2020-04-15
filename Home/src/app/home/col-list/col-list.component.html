@@ -1,0 +1,8 @@
+<ul class="col-list">
+  <li *ngFor="let item of list">
+    {{item.name}}
+    <ul *ngIf="!!item.subset">
+      <li *ngFor="let subItem of item.subset">{{subItem}}</li>
+    </ul>
+  </li>
+</ul>

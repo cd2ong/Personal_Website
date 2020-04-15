@@ -1,0 +1,353 @@
+.primary{
+  color:#0099FF
+}
+
+.secondary {
+  color:#9900CC
+}
+
+.tertiary {
+  color:#FF3333
+}
+
+#nav-list{
+
+  @media screen and (max-width: 600px) {
+    display:none;
+  }
+}
+
+#nav-icon{
+  display:none;
+  position:fixed;
+  top:20px;
+  right:20px;
+  z-index:201;
+
+  @media screen and (max-width: 600px) {
+    display:block;
+  }
+
+  .nav-icon{
+    width: 40px;
+    height: 40px;
+    position: relative;
+    margin: 0 auto;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: 1s ease-in-out;
+    -moz-transition: 1s ease-in-out;
+    -o-transition: 1s ease-in-out;
+    transition: 1s ease-in-out;
+    cursor: pointer;
+
+    span{
+      display: block;
+      position: absolute;
+      height: 8px;
+      width: 100%;
+      background: #2E3A38;
+      border-radius: 9px;
+      opacity: 1;
+      left: 0;
+      -webkit-transform: rotate(0deg);
+      -moz-transform: rotate(0deg);
+      -o-transform: rotate(0deg);
+      transform: rotate(0deg);
+      -webkit-transition: .5s ease-in-out;
+      -moz-transition: .5s ease-in-out;
+      -o-transition: .5s ease-in-out;
+      transition: .5s ease-in-out;
+
+      &:nth-child(1) {
+        top: 0px;
+      }
+
+      &:nth-child(2), &:nth-child(3) {
+        top: 12px;
+      }
+
+      &:nth-child(4) {
+        top: 24px;
+      }
+
+    }
+
+    &.open{
+      span{
+        &:nth-child(1) {
+          top: 18px;
+          width: 0%;
+          left: 50%;
+        }
+
+        &:nth-child(2) {
+          -webkit-transform: rotate(45deg);
+          -moz-transform: rotate(45deg);
+          -o-transform: rotate(45deg);
+          transform: rotate(45deg);
+        }
+
+        &:nth-child(3) {
+          -webkit-transform: rotate(-45deg);
+          -moz-transform: rotate(-45deg);
+          -o-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+        }
+
+        &:nth-child(4) {
+          top: 18px;
+          width: 0%;
+          left: 50%;
+        }
+      }
+    }
+  }
+}
+
+#nav-menu{
+  display:none;
+
+  @media screen and (max-width: 600px) {
+    display:block;
+    height:0px;
+    -webkit-transition: height 0.5s ease-in-out 0s;
+    -moz-transition: height 0.5s ease-in-out 0s;
+    -o-transition: height 0.5s ease-in-out 0s;
+    transition: height 0.5s ease-in-out 0s;
+
+    &.open{
+      height:261px !important;
+    }
+
+  }
+}
+
+#header{
+  height: 80px;
+  width:100%;
+  box-sizing: border-box;
+  position:fixed;
+  top:0;
+  left:0;
+  padding-left: 5%;
+  padding-right: 5%;
+  z-index: 100;
+
+  @media screen and (max-width: 950px) {
+    height:220px;
+  }
+
+  @media screen and (max-width: 600px) {
+    height:auto;
+    padding: 0 0 0 0;
+  }
+
+}
+
+.bg{
+  background-image: url("~/assets/images/swirl.png");
+  background-size: 90px 90px;
+}
+
+#logo{
+  background-image: url("~/assets/images/logo.png");
+  background-size:contain;
+  background-repeat: no-repeat;
+  background-position: left center;
+  height: 70px;
+  width: 61px;
+  margin-right: 1.5%;
+  margin-top:5px;
+  margin-bottom:5px;
+  padding: 0 0 0 0;
+  float:left;
+  cursor: pointer;
+
+  @media screen and (max-width: 950px) {
+    width:100%;
+    margin-right: 0%;
+    background-position: center;
+  }
+
+  @media screen and (max-width: 600px) {
+    margin-left:5%;
+    margin-right:5%;
+    width:90%;
+    float:left;
+  }
+}
+
+#label{
+  float:left;
+  width:30%;
+  height:auto;
+
+  @media screen and (max-width: 950px) {
+    width:100%;
+    text-align: center;
+  }
+
+  @media screen and (max-width: 600px) {
+    margin-left:5%;
+    margin-right:5%;
+    width:90%;
+    display:none;
+  }
+}
+
+#name{
+  float:left;
+  width:100%;
+  height:auto;
+  font-size: 32em;
+  line-height: 1em;
+  margin: 0 auto;
+  margin-top:10px;
+  cursor: pointer;
+
+  @media screen and (max-width: 950px) {
+    width:100%;
+    text-align: center;
+  }
+}
+
+#title{
+  width:100%;
+  float:left;
+  height:auto;
+  font-size: 15em;
+  margin: 0 auto;
+  margin-top: 3px;
+  font-family: NeueFontThin;
+  cursor: pointer;
+
+  @media screen and (max-width: 950px) {
+    width:100%;
+    text-align: center;
+  }
+
+  @media screen and (max-width: 600px) {
+    margin-bottom:0.62em;
+  }
+}
+
+#nav {
+  height:100%;
+  width:60.5%;
+  margin: 0 0 0 0;
+  float:right;
+
+  @media screen and (max-width: 950px) {
+    width:auto;
+    float:none;
+    margin:0 auto;
+    display:table;
+    height:auto;
+  }
+
+  @media screen and (max-width: 600px) {
+    top:80px;
+    left:0;
+    z-index:200;
+    width:100%;
+    background-image: url("~/assets/images/swirl.png");
+    background-size: 90px 90px;
+  }
+
+  ul{
+
+    list-style: none;
+    font-size: 22em;
+    float:right;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    height:100%;
+    width:auto;
+
+    @media screen and (max-width: 950px) {
+      float:none;
+    }
+
+    @media screen and (max-width: 600px) {
+      overflow: hidden;
+      height:0px;
+      width:100%;
+      background-image: url("~/assets/images/swirl.png");
+      background-size: 90px 90px;
+    }
+
+    li {
+      float:left;
+      margin-left: 0.7em;
+      margin-right: 0.7em;
+      margin-top:1em;
+
+      @media screen and (max-width: 600px) {
+        width:100%;
+        box-sizing: border-box;
+        background-image: url("~/assets/images/swirl.png");
+        background-size: 90px 90px;
+        margin-left:0%;
+        margin-right:0%;
+        padding-left:0%;
+        padding-right:0%;
+        margin-top:0;
+        padding-top:0em;
+        padding-bottom:0em;
+        width:100%;
+        text-align: center;
+      }
+
+      &:first-child{
+
+        @media screen and (max-width: 950px) {
+          margin-left:0px;
+        }
+
+        @media screen and (max-width: 600px) {
+          padding-top:0px;
+          padding-bottom:0;
+        }
+      }
+      &:last-child {
+        margin-right:0;
+
+        @media screen and (max-width: 600px) {
+          padding-bottom:0.5em;
+        }
+      }
+
+      div{
+        @media screen and (max-width: 600px) {
+          margin-left:0%;
+          margin-right:0%;
+          padding-left:5%;
+          padding-right:5%;
+          margin-top:0;
+          padding-top:0.5em;
+          padding-bottom:0em;
+          width:100%;
+          text-align: center;
+        }
+      }
+
+      a{
+        color: #2E3A38;
+        cursor: pointer;
+        text-decoration: none;
+        display:inline-block;
+        width:100%;
+
+        &:hover{
+          color:#0099FF;
+          cursor: pointer;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+
